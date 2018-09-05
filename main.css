@@ -33,15 +33,42 @@ nav {
     height: 85%; 
 }
 
-.dialog-box{ 
+p.dialog-box{ 
     position: relative; 
+    bottom: 50%; 
+
     width: 40%; 
-    height: 40%; 
+    height: 30%; 
+    
     margin-left: auto;
     margin-right: auto;
+    
+    text-align: center; 
+
     background-color: silver; 
     border: 10px solid black;
-    bottom: 50%; 
 
     border-radius: 50px;
 }
+
+p.dialog-box:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 60px;
+    top: 275px;
+    border: 50px solid;
+    border-color:black transparent transparent black;
+  }
+
+  p.dialog-box:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 70px;
+    top: 265px;
+    border: 40px solid;
+    border-color:silver transparent transparent silver;
+  }
