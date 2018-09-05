@@ -8,39 +8,40 @@ body{
     height: 100%; 
 }
 
-
 body * {
     box-sizing: border-box;  
     font-family: 'Roboto', sans-serif;
     height: 100%; 
     width: 100%; 
-
 }
-
 
 main{ 
     position: relative; 
     top: 15%; 
 }
 
+nav { 
+    position: fixed; 
+    height: 15%;
+    width: 100%; 
+    background-color: black; 
+}
+
 .bg { 
-    /* position: relative;  */
     background: url(http://i.imgur.com/6HOSUUW.jpg) no-repeat;
     background-size: cover;
     height: 85%; 
-
-
-    /* margin-top: 200px;  */
-
 }
 
-nav { 
-    position: fixed; 
+.dialog-box{ 
+    position: relative; 
+    width: 40%; 
+    height: 40%; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: silver; 
+    border: 10px solid black;
+    bottom: 50%; 
 
-    height: 15%;
-    width: 100%; 
-
-    background-color: black; 
-
-
+    border-radius: 50px;
 }
